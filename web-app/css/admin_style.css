@@ -1,0 +1,235 @@
+
+/* DASHBOARD DIVS */
+/* dashboard area sections */
+#dashboard {
+	width: 100%;
+}
+
+#dashboard #topsection {
+	width: 100%;
+	min-height: 20px;
+}
+#dashboard #leftsection {
+	float: left;
+	width: 49%;
+	min-height: 20px;
+}
+#dashboard #rightsection {
+	float: right;
+	width: 49%;
+	min-height: 20px;
+}
+
+#dashboard .ui-sortable {
+	background-color: #E6E6FA;
+}
+
+#dashboard .ui-sortable-disabled {
+	background-color: #FFF;
+}
+
+#dashboard .ui-sortable-helper {
+	width: 300px;
+}
+/* widgets */
+#dashboard div.widget {
+	position: relative;
+	display: block;
+	border: 1px #CCC solid;
+	margin-bottom: 16px;
+}
+
+#dashboard div.widget div.header {
+	font-weight: bold;
+	/*background-color: #999;*/
+	display: block;
+	/*color: #FFF;*/
+	padding-left: 5px;
+	line-height: 20px;
+}
+
+#dashboard div.widget div.body {
+	display: block;
+	margin: 5px;
+}
+
+#dashboard div.widget div.action {
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	line-height: 20px;
+}
+
+/* MENU NAVIGATION */
+#navigation #menu { padding: 2em 0 2em 2em; }
+#navigation #menu a { color: #000; text-decoration: none; }
+#navigation #menu a:hover { text-decoration: underline; }
+.menu.i { background-color:#f08080; }
+.menu.h { background-color:#6495ed;}
+/* STANDARD STYLES */
+h2 {
+	margin-top: 0.3em;
+	border-bottom: 1px solid #777;
+}
+
+.spinner { padding: 1px 0 1px 25px; background: url(../images/spinner.gif) no-repeat 0px 50%;}
+
+.hidden { display:none; }
+
+fieldset {
+	border:1px solid;
+	margin:10px 0px 20px 0px;
+}
+legend {
+	padding: 0.2em 0.5em;
+	border:1px solid;
+	font-weight:bold;
+	text-align:left;
+}
+
+/* FORMS */
+select.gs_multiSelect{
+	width: 450px;
+	height: 200px;
+}
+input[type=text],input[type=password]{
+	width: 225px;
+}
+input.date{
+	width: 90px;
+}
+input.datetime{
+	width: 150px;
+}
+select {
+	width: 225px;
+}
+
+/* TABLES */
+
+div.list table {
+	border: 1px solid #ccc;
+	width: 100%
+}
+div.list tr {
+	border: 0;
+}
+div.list td, th {
+	font: 11px verdana, arial, helvetica, sans-serif;
+	line-height: 12px;
+	padding: 5px 6px;
+	text-align: left;
+	vertical-align: top;
+}
+div.list td.action {
+	width:75px; text-align: center;
+}
+div.list td.idcheck {
+	width: 15px;
+}
+div.list th {
+	/*background: #fff url(../images/crud/shadow.jpg);*/
+	/*color: #666;*/
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 17px;
+	padding: 2px 6px;
+}
+
+div.list th.action {
+	text-align:center;
+}
+div.list th a:link, div.list th a:visited, div.list th a:hover {
+	margin-right: 10px;
+	/*color: #333;*/
+	display: block;
+	font-size: 10px;
+	text-decoration: none;
+	width: 100%;
+}
+div.list th.asc a, div.list th.desc a {
+	background-position: right;
+	background-repeat: no-repeat;
+}
+div.list th.asc a {
+	background-image: url(../images/crud/sorted_asc.gif);
+}
+div.list th.desc a {
+	background-image: url(../images/crud/sorted_desc.gif);
+}
+
+/* LIST */
+.list table {
+	border-collapse: collapse;
+}
+.list th, .list td {
+	border-left: 1px solid #ddd;
+}
+.list th:hover, .list tr:hover {
+	/*background: #b2d1ff;*/
+}
+
+/* PAGINATION */
+
+.paginateButtons {
+	/*background: #fff url(../images/crud/shadow.jpg) bottom repeat-x;*/
+	border: 1px solid #ccc;
+	/*border-top: 0;*/
+	/*color: #666;*/
+	font-size: 10px;
+	overflow: hidden;
+	padding: 10px 3px;
+}
+.paginateButtons a {
+	/*background: #fff;*/
+	border: 1px solid #ccc;
+	border-color: #ccc #aaa #aaa #ccc;
+	color: #666;
+	margin: 0 3px;
+	padding: 2px 6px;
+}
+.paginateButtons span {
+	padding: 2px 3px;
+}
+
+
+/* DIALOG */
+
+.dialog table {
+	padding: 5px 0;
+}
+.dialog tr {
+	border: 0;
+}
+.dialog td, th {
+	font: 11px verdana, arial, helvetica, sans-serif;
+	line-height: 12px;
+	text-align: left;
+	vertical-align: top;
+}
+
+/* FIELD ERRORS */
+td.errors select {
+	border: 1px solid red;
+}
+td.errors input {
+	border: 1px solid red;
+}
+
+tr.prop {
+	padding: 5px;
+}
+tr.prop td.name {
+	padding-bottom: 5px;
+	padding-left: 10px;
+	text-align: left;
+	width: 150px;
+	/*white-space: nowrap;*/
+}
+
+tr.prop td.value {
+	padding-bottom: 5px;
+	text-align: left;
+	/*width: 200px;*/
+	white-space: nowrap;
+}

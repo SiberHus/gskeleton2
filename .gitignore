@@ -1,0 +1,13 @@
+
+*.class
+*.log
+
+.idea/
+.settings/
+out/
+target/
+.classpath
+.project
+gskeleton-two.iml
+gskeleton-two-grailsPlugins.iml
+stacktrace.log

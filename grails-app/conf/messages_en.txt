@@ -1,0 +1,140 @@
+default.doesnt.match.message=Property [{0}] of class [{1}] with value [{2}] does not match the required pattern [{3}]
+default.invalid.url.message=Property [{0}] of class [{1}] with value [{2}] is not a valid URL
+default.invalid.creditCard.message=Property [{0}] of class [{1}] with value [{2}] is not a valid credit card number
+default.invalid.email.message=Property [{0}] of class [{1}] with value [{2}] is not a valid e-mail address
+default.invalid.range.message=Property [{0}] of class [{1}] with value [{2}] does not fall within the valid range from [{3}] to [{4}]
+default.invalid.size.message=Property [{0}] of class [{1}] with value [{2}] does not fall within the valid size range from [{3}] to [{4}]
+default.invalid.max.message=Property [{0}] of class [{1}] with value [{2}] exceeds maximum value [{3}]
+default.invalid.min.message=Property [{0}] of class [{1}] with value [{2}] is less than minimum value [{3}]
+default.invalid.max.size.message=Property [{0}] of class [{1}] with value [{2}] exceeds the maximum size of [{3}]
+default.invalid.min.size.message=Property [{0}] of class [{1}] with value [{2}] is less than the minimum size of [{3}]
+default.invalid.validator.message=Property [{0}] of class [{1}] with value [{2}] does not pass custom validation
+default.not.inlist.message=Property [{0}] of class [{1}] with value [{2}] is not contained within the list [{3}]
+default.blank.message=Property [{0}] of class [{1}] cannot be blank
+default.not.equal.message=Property [{0}] of class [{1}] with value [{2}] cannot equal [{3}]
+default.null.message=Property [{0}] of class [{1}] cannot be null
+default.not.unique.message=Property [{0}] of class [{1}] with value [{2}] must be unique
+
+default.paginate.prev=Previous
+default.paginate.next=Next
+default.boolean.true=True
+default.boolean.false=False
+default.date.format=yyyy-MM-dd HH:mm:ss z
+default.number.format=0
+
+#default.created.message={0} {1} created
+#default.updated.message={0} {1} updated
+#default.deleted.message={0} {1} deleted
+#default.not.deleted.message={0} {1} could not be deleted
+#default.not.found.message={0} not found with id {1}
+#default.optimistic.locking.failure=Another user has updated this {0} while you were editing
+
+default.home.label=Home
+default.list.label={0} List
+default.add.label=Add {0}
+default.new.label=New {0}
+default.create.label=Create {0}
+default.show.label=Show {0}
+default.edit.label=Edit {0}
+
+# Data binding errors. Use "typeMismatch.$className.$propertyName to customize (eg typeMismatch.Book.author)
+typeMismatch.java.net.URL=Property {0} must be a valid URL
+typeMismatch.java.net.URI=Property {0} must be a valid URI
+typeMismatch.java.util.Date=Property {0} must be a valid Date
+typeMismatch.java.lang.Double=Property {0} must be a valid number
+typeMismatch.java.lang.Integer=Property {0} must be a valid number
+typeMismatch.java.lang.Long=Property {0} must be a valid number
+typeMismatch.java.lang.Short=Property {0} must be a valid number
+typeMismatch.java.math.BigDecimal=Property {0} must be a valid number
+typeMismatch.java.math.BigInteger=Property {0} must be a valid number
+
+
+field.validator.future={0} must be a future date
+field.validator.length={0} length must be between {1} and {2}
+field.validator.max={0} must be less than or equal to {1}
+field.validator.min={0} must be greater than or equal to {1}
+field.validator.notNull={0} may not be null
+field.validator.past={0} must be a past date
+field.validator.pattern={0} must match "{1}"
+field.validator.range={0} must be between {1} and {2}
+field.validator.size={0} size must be between {1} and {2}
+field.validator.email={0} not a well-formed email address
+field.validator.notEmpty={0} may not be null or empty
+field.validator.creditCard={0} is invalid credit card number
+field.validator.ean={0} is invalid EAN
+
+_info.crud.created={0} {1} created
+_info.crud.updated={0} {1} updated
+_info.crud.bulkDeleted={0} {1} deleted
+_info.crud.deleted={0} {1} deleted
+_error.crud.not.deleted={0} {1} could not be deleted
+_error.crud.not.found={0} not found with id {1}
+_error.optimistic.locking.failure=Another user has updated this {0} while you were editing
+
+message.error=ERROR
+message.warn=WARNING
+message.info=INFO
+
+status.A=Active
+status.I=Inactive
+status.S=Suspended
+status.E=Expired
+status.H=Hidden
+status.D=Deleted
+
+crud.select.pleaseSelect
+crud.searchBox=Search Box
+crud.list.show=show
+crud.list.edit=edit
+crud.createdDate=Date Created
+crud.createdBy=Created By
+crud.modifiedDate=Date Modified
+crud.modifiedBy=Modified By
+crud.display=Display
+crud.itemsPerPage=Items per page
+crud.action.confirm=Are you sure you want to perform this action?
+#Export Dialog
+crud.export.fileName=File Name
+crud.export.escapeCsv=Escape CSV?
+crud.export.columnSeparator=Column Separator
+crud.export.fileFormat=File Format
+crud.export.fileEncoding=File Encoding
+
+btn.accept=Accept
+btn.add=Add
+btn.ok=OK
+btn.edit=Edit
+btn.update=Update
+btn.delete=Delete
+btn.create=Create
+btn.bulkDelete=Delete
+btn.export=Export
+btn.close=Close
+btn.search=Search
+btn.unlock=Unlock
+
+#Auth
+login.failed=Username/Password combination is not correct
+login.failed.inactive=User account is inactive
+login.failed.expired=User account expired
+login.failed.suspended=User account has been suspended
+login.failed.deleted=Account has been deleted
+login.failed.multisession=Multi-session authentication is not allowed
+login.failed.mutiaddress=Multi-address authentication is not allowed
+
+#AdminMenu
+adminMenu.targetName._self=Self Page
+adminMenu.targetName._blank=Blank Page
+adminMenu.targetName._top=Top Page
+adminMenu.targetName._parent=Parent Page
+
+#Widget
+widget.defaultPosition.CENTER=Center
+widget.defaultPosition.LEFT=Left
+widget.defaultPosition.RIGHT=Right
+
+#Job Log
+jobLog.error=ERROR
+jobLog.success=SUCCESS
+jobLog.running=RUNNING
+

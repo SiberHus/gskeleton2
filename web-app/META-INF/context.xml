@@ -1,0 +1,18 @@
+<Context path="/gskeleton2" docBase="gskeleton2"
+        debug="5" reloadable="true" crossContext="true">
+	<Resource name="jdbc/gskeleton"
+	auth="Container"
+	type="javax.sql.DataSource"
+	factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+	username="admin"
+	password="password"
+	driverClassName="org.postgresql.Driver"
+	url="jdbc:postgresql://localhost:5432/gskeleton2"
+	maxWait="1000"
+	removeAbandoned="true"
+	maxActive="30"
+	maxIdle="10"
+	removeAbandonedTimeout="60"
+	logAbandoned="true"/>
+
+</Context>

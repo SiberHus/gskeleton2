@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title><g:layoutTitle default="Grails" /></title>
+        <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon" />
+        <link rel="stylesheet" href="${resource(dir:'css',file:'main.css')}" />
+        
+        <link rel="stylesheet" href="${resource(dir:'css',file:'jquery/ui/base/ui.all.css')}" />
+		<link rel="stylesheet" href="${resource(dir:'css',file:'jquery/ui/ui.multiselect.css')}" />
+		<link rel="stylesheet" href="${resource(dir:'css',file:'jquery/dynatree/ui.dynatree.css')}" />
+		<link rel="stylesheet" href="${resource(dir:'css',file:'jquery/jqGrid/ui.jqgrid.css')}" />
+		<link rel="stylesheet" href="${resource(dir:'css',file:'jquery/simpletree/simpletree.css')}" />
+		<link rel="stylesheet" href="${resource(dir:'css',file:'jquery/layout/droppable_layout.css')}" />
+		<link rel="stylesheet" href="${resource(dir:'css',file:'jquery/layout/droppable_widget.js.css')}" />
+		<style type="text/css">
+			#tree {
+				vertical-align: top;
+			    width: 250px;
+			}
+			iframe {
+				border: 1px dotted gray;
+			}
+		</style>
+		<g:javascript src="jquery/jquery-1.3.2.min.js" />
+		<g:javascript src="jquery/ui/jquery-ui-1.7.2.min.js" />
+		<g:javascript src="js/jquery/ui/i18n/jquery-ui-i18n.js" />
+		<!-- <g:javascript src="jquery/ui/i18n/ui-multiselect-en.js" /> -->
+		<g:javascript src="jquery/cookie/jquery.cookie-1.0.js" />
+		<g:javascript src="jquery/dynatree/jquery.dynatree-0.5.1.js" />
+		<g:javascript src="jquery/jqGrid/i18n/grid.locale-en.js" />
+		<g:javascript src="jquery/jqGrid/jquery.jqGrid-3.6.1.min.js" />
+		<g:javascript src="jquery/localisation/jquery.localisation.min.js" />
+		<g:javascript src="jquery/scrollTo/jquery.scrollTo-1.4.1.min.js" />
+		<g:javascript src="jquery/simpletree/jquery.simple.tree-0.3.js" />
+		<g:javascript src="jquery/layout/jquery.layout-1.2.0.min.js" />
+		<g:javascript library="application" />
+		<script type="text/javascript">
+			//$.jgrid.no_legacy_api = true;
+			//$.jgrid.useJSON = true;
+			$(function(){
+				// Attach the dynatree widget to an existing <div id="tree"> element
+				// and pass the tree options as an argument to the dynatree() function:
+				$("#tree").dynatree({
+					rootVisible: false,
+					//autoCollapse: true,
+					persist: true,
+					onPostInit: function(isReloading, isError) {
+					   this.reactivate();
+					}
+					
+				});
+
+				// create the OUTER LAYOUT
+				outerLayout = $("body").layout();
+				
+				// init the Sortables
+				$(".column").sortable({
+					connectWith:$(".column"),
+					placeholder:'widget-placeholder',
+					cursor:'move',
+					//use a helper-clone that is append to 'body' so is not 'contained' by a pane
+					helper: function (e,ui) { 
+						return $(ui).clone().appendTo('body').show(); 
+					}
+				});
+				
+			});//onReady
+		</script>
+		
+        <g:layoutHead />
+        				
+    </head>
+    <body>
+    	<div class="ui-layout-north">
+    		<div class="logo"><img src="${resource(dir:'images',file:'grails_logo.jpg')}" alt="Grails" /></div>
+	        <div id="spinner" class="spinner" style="display:none;">
+				<img src="${resource(dir:'images',file:'spinner.gif')}" alt="Spinner" />
+			</div>
+		</div>
+		<div class="ui-layout-west">
+			<ul class="column">
+				<li class="widget color-green" id="widget_201>">
+					<div class="widget-head">
+						<h3>Menu</h3>
+					</div>
+					<div class="widget-content">
+						<div id="tree"></div>
+					</div>
+				</li>
+				<li class="widget color-green" id="widget_202>">
+					<div class="widget-head">
+						<h3>EAST 2</h3>
+					</div>
+					<div class="widget-content">
+						Lorem ipsum fez kfez f	ezf ez
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="ui-layout-center" style="background-color: white;">
+			<g:layoutBody />
+		</div>
+    </body>	
+</html>

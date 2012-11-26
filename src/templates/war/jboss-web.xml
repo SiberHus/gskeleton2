@@ -1,0 +1,6 @@
+<jboss-web>
+	<resource-ref>
+		<res-ref-name>jdbc/gskeleton</res-ref-name>
+		<jndi-name>java:/jdbc/gskeleton</jndi-name>
+	</resource-ref>
+</jboss-web>

@@ -1,0 +1,26 @@
+
+Up coming feature
+* PIM Calendar (Meeting, Can send the appointment to other user)
+* Calendar can create group and user, user must select group or select all group
+* Calendar feature use Pure Ajax
+* PIM Personal Message
+* PIM Todo (Boss can send todo to , Todo must have priority. name, detail, Start date, End date, status, assigner, assignee
+* Widget for calendar (small with a little mark), TODO, PM
+* Address Book (Can import from Outlook, Thunderbird, Excel) and can export too
+
+* EDM Module (Email Config, Email Composer, Email Template Management, Template Parser Engine, Email Tracking)
+* SQL Query Manager
+* Site Preference (themes, color, size)
+* Knowledge Management
+* Logging Configuration (May send error log to log server)
+* Bug Tracking Management (Can be synchronized with central repository)
+
+Issue Tracking
+Can recieve issue via email(pop,imap). The system will download issue email from mail server.
+and may send notification to all staffs who is responsible for the case. notification carrier maybe sms, email, msm
+If there are staff who take the case, the system will send the notifcation update for that case to the relate staff in the group.
+Email autoresponse can be setup
+Issue ID can be configurable.
+
+
+

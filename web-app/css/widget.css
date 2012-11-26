@@ -1,0 +1,13 @@
+
+
+input.date, input.datetime {
+	background-image:url(../images/icons/calendar.png);
+	background-position:right center; 
+	background-repeat:no-repeat;
+}
+
+input.time {
+	background-image:url(../images/icons/clock.png);
+	background-position:right center; 
+	background-repeat:no-repeat;
+}

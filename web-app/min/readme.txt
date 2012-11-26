@@ -1,0 +1,1 @@
+this directory is a temporary directory to store the comressed css and js

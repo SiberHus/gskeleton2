@@ -1,0 +1,1 @@
+div.combo{position:relative;left:0;top:0;}.combo input{position:absolute;}.combo div.icon{position:absolute;}.combo div.list-wrapper{position:absolute;overflow:hidden;height:200px;max-height:200px;z-index:99999;}.combo li{height:20px;}.combo .visible{display:block;}.combo .invisible{display:none;}
